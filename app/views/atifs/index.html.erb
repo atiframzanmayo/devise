@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Atifs</h1>
+
+<div id="atifs">
+  <% @atifs.each do |atif| %>
+    <%= render atif %>
+    <p>
+      <%= link_to "Show this atif", atif %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New atif", new_atif_path %>

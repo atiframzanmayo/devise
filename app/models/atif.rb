@@ -1,0 +1,2 @@
+class Atif < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Freiend < ApplicationRecord
+end

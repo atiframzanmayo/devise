@@ -1,0 +1,27 @@
+<%= form_with(model: atif) do |form| %>
+  <% if atif.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(atif.errors.count, "error") %> prohibited this atif from being saved:</h2>
+
+      <ul>
+        <% atif.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :a, style: "display: block" %>
+    <%= form.text_field :a %>
+  </div>
+
+  <div>
+    <%= form.label :b, style: "display: block" %>
+    <%= form.number_field :b %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

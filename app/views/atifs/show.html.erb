@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @atif %>
+
+<div>
+  <%= link_to "Edit this atif", edit_atif_path(@atif) %> |
+  <%= link_to "Back to atifs", atifs_path %>
+
+  <%= button_to "Destroy this atif", @atif, method: :delete %>
+</div>
